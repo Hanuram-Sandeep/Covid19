@@ -24,7 +24,7 @@ class EachState extends Component {
   fetchAboutData = async () => {
     const {stateCode} = this.props
     const response = await fetch(
-      `https://api.covid19india.org/v4/min/timeseries-${stateCode}.min.json`,
+      `https://data.covid19india.org/v4/min/timeseries-${stateCode}.min.json`,
     )
     const data = await response.json()
 
