@@ -15,7 +15,7 @@ class About extends Component {
 
   fetchAboutData = async () => {
     const response = await fetch(
-      'https://api.covid19india.org/website_data.json',
+      'https://data.covid19india.org/website_data.json',
     )
     const data = await response.json()
     this.setState({AboutData: data.faq, isLoading: false})
